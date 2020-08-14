@@ -1,0 +1,50 @@
+.krname {
+  color: green;
+  height: 30px;
+}
+
+.green {
+        color: green;
+      }
+
+.skyblue {
+  color: skyblue;
+}
+
+.btn {
+  text-decoration: none;
+  font-size: 2rem;
+  color: white;
+  padding: 3px 10px 3px 10px;
+  margin: 10px;
+  display: inline-block;
+  border-radius: 10px;
+  transition: all 0.1s;
+  text-shadow: 1px 2px rgba(0, 0, 0, 0.534);
+}
+
+.btn:active {
+  transform: translateY(3px);
+}
+
+.btn.green {
+  background-color: limegreen;
+  border-bottom: 5px solid rgb(36, 177, 36);
+}
+
+.btn.green:active {
+  border-bottom:3px solid rgb(36, 177, 36);
+}
+
+.botton {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+  padding: 3px 10px 3px 10px;
+  margin: 10px;
+  display: inline-block;
+  border-radius: 10px;
+  transition: all 0.1s;
+  text-shadow: 1px 2px rgba(0, 0, 0, 0.534);
+  background-color: limegreen;
+}
