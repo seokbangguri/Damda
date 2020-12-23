@@ -1,0 +1,111 @@
+* {
+    text-decoration: none;
+  }
+  
+  body {
+    background-color: #ffffff;
+    font-family: 'Noto Sans KR';
+    color: #000000
+  }
+  
+  /*헤더*/
+  .header {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    font-size: 20px;
+    height: 100px;
+  }
+  
+  a {
+    color: #000000;
+  }
+  
+  
+  .logo a {
+    position: relative;
+    padding: 6px 12px;
+    margin: 0px 50px;
+    font-size: 30px;
+  }
+  
+  .topnav {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 20px;
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .topnav a {
+    position: relative;
+    padding: 6px 12px;
+    margin: 30px;
+  }
+  
+  .topnav a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: #000000;
+    transition: all .5s ease-out;
+  }
+  
+  .topnav a:hover::after {
+    width: 100%
+  }
+  
+  
+  
+  .content {
+    margin: 5px 0px;
+    height: 60%;
+    background-color: white;
+    overflow:auto;
+  }
+  
+  .welcome {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+  }
+  
+  #time, #fee, #caution, #route {
+    font-size: 1rem;
+  }
+  
+  /*인포 css*/
+  
+  #time li {
+    list-style-type: none;
+  }
+  #special {
+    font-size: 13px;
+  }
+  
+  #fee table {
+    border-collapse: collapse;
+    width: auto;
+  }
+    
+  td, th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+    text-align: center;
+  }
+    
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  #caution li {
+    padding: 5px;
+  }
