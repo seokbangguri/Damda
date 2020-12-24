@@ -15,7 +15,6 @@
     align-items: center;
     padding: 8px 12px;
     font-size: 20px;
-    height: 100px;
   }
   
   a {
@@ -75,12 +74,16 @@
     margin: 0 30%;
   }
   
+  /*인포 css*/
+  
   #time, #fee, #caution, #route {
     font-size: 1rem;
   }
   
-  /*인포 css*/
-  
+  #route {
+    width: 500px;
+  }
+
   #time li {
     list-style-type: none;
   }
