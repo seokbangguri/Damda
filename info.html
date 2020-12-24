@@ -66,15 +66,15 @@
 	                    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=5439f7a95d859b3acf32dbd68787c55d"></script>
 	                    <script>
 	                    	var container = document.getElementById('map');
-	                    	var options = {
-	                    		center: new kakao.maps.LatLng(37.2771813724545, 127.13667245593169),
-	                    		level: 3
-	                    	};
+	                    	    mapoption = {
+	                    		    center: new kakao.maps.LatLng(37.2771813724545, 127.13667245593169),
+	                    		    level: 3
+	                    	    };
                             	var map = new kakao.maps.Map(mapContainer, mapOption);
 
-                           	var markerPosition  = new kakao.maps.LatLng(37.2771813724545, 127.13667245593169); 
+                            	var markerPosition  = new kakao.maps.LatLng(37.2771813724545, 127.13667245593169); 
                             	var marker = new kakao.maps.Marker({position: markerPosition});
-                           	marker.setMap(map);
+                            	marker.setMap(map);
 	                    	var map = new kakao.maps.Map(container, options);
 	                    </script>
                     </div>
