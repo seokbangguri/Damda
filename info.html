@@ -5,6 +5,7 @@
     <title>근현대사 미술관 담다</title>
     <link href="styleinfo.css" rel="stylesheet" type="text/css">
     <meta name="description" content="근현대사 미술관 담다">
+    
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
 </head>
@@ -62,20 +63,19 @@
                         <p>오시는길</p>
                         <p>경기 용인시 기흥구 강남동로140번길 1-6 근현대사미술관담다</p>
                         <p>에버라인 어정역 2번출구 도보 5분</p>
+                        
                         <div id="map" style="width:500px;height:400px;"></div>
 	                    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=5439f7a95d859b3acf32dbd68787c55d"></script>
 	                    <script>
-	                    	var container = document.getElementById('map');
-	                    	    mapoption = {
-	                    		    center: new kakao.maps.LatLng(37.2771813724545, 127.13667245593169),
-	                    		    level: 3
-	                    	    };
-                            	var map = new kakao.maps.Map(mapContainer, mapOption);
+		                    var container = document.getElementById('map');
+		                    var options = {
+			                center: new kakao.maps.LatLng(37.2771813724545, 127.13667245593169),
+			                level: 3
+		                    };
 
-                            	var markerPosition  = new kakao.maps.LatLng(37.2771813724545, 127.13667245593169); 
-                            	var marker = new kakao.maps.Marker({position: markerPosition});
-                            	marker.setMap(map);
-	                    </script>
+		                    var map = new kakao.maps.Map(container, options);
+                        </script>
+                        
                     </div>
                     <div id="caution">
                         <p>주의사항</p>
