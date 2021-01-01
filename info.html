@@ -3,49 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <title>근현대사 미술관 담다</title>
-    <link href="styleinfo.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
     <meta name="description" content="근현대사 미술관 담다">
-    
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
 </head>
 <body>
-        <!--헤더-->
-        <nav class="header">
-            <!--로고-->
-            <div class="logo">
+    <!--헤더-->
+    <nav class="header">
+        <!--로고-->
+        <div class="logo">
             <a href="index.html">Damda</a>
-            </div>
-            <!--네비게이션 바-->
-            <ul class="topnav">
-                <li><a class="menu" href="info.html">이용안내</a></li>
-                <li><a class="menu" href="service.html">서비스</a></li>
-                <li><a class="menu" href="social.html">소셜</a></li>
-            </ul>
-        </nav>
-        <!--메인 컨텐츠-->
-        <div class="content">
-            <div class="welcome">
-                <h1>담다 이용안내</h1>
-                <h5>
-                    <div id="time">
-                        <p>관람시간</p>
-                        <ul>
-                            <li>동절기: 10:00AM - 17:00PM</li>
-                            <li>하절기: 10:00AM - 17:00PM</li>
-                            <li id="special">※ 정기휴관일 : 월요일, 1월 1일, 설날, 추석</li>
-                        </ul>
-                    </div>
-                    <div id="fee">
-                        <p>요금안내</p>
-                        <table>
-                            <tr>
-                                <th>구분</th>
-                                <th>어린이 , 노인</th>
-                                <th>청소년 , 군인</th>
-                                <th>성인</th>
-                            </tr>
-                            <tr>
+        </div>
+        <!--네비게이션 바-->
+        <ul class="topnav">
+            <li><a class="menu" href="info.html">이용안내</a></li>
+            <li><a class="menu" href="service.html">서비스</a></li>
+            <li><a class="menu" href="social.html">소셜</a></li>
+        </ul>
+    </nav>
+    <!--메인 컨텐츠-->
+    <div class="content">
+        <div class="welcome">
+            <h1>담다 이용안내</h1>
+            <h5>
+                <div id="time">
+                    <p>관람시간</p>
+                    <ul>
+                        <li>동절기: 10:00AM - 17:00PM</li>
+                        <li>하절기: 10:00AM - 17:00PM</li>
+                        <li id="special">※ 정기휴관일 : 월요일, 1월 1일, 설날, 추석</li>
+                    </ul>
+                </div>
+                <div id="fee">
+                    <p>요금안내</p>
+                    <table>
+                        <tr>
+                            <th>구분</th>
+                            <th>어린이 , 노인</th>
+                            <th>청소년 , 군인</th>
+                            <th>성인</th>
+                        </tr>
+                        <tr>
                                 <td>개인</td>
                                 <td>2500원</td>
                                 <td>3000원</td>
@@ -69,8 +68,8 @@
 	                    <script>
 		                    var container = document.getElementById('map');
 		                    var options = {
-			                center: new kakao.maps.LatLng(37.2771813724545, 127.13667245593169),
-			                level: 3
+			                    center: new kakao.maps.LatLng(37.2771813724545, 127.13667245593169),
+			                    level: 3
 		                    };
 
 		                    var map = new kakao.maps.Map(container, options);
@@ -91,8 +90,17 @@
             </div>
         </div>
         <!--저작권 파트-->
-        <div>
-            <h6>ⓒ 2021.조이홍. All rights reserved.</h6>
-        </div>
+        <footer>
+            <div class="footer-content">
+                <p class="asd">
+                    근현대사 미술관 담다
+                    <a href="https://band.us/n/a6a94f63g8Xa3"><img src="images/band.png" alt="band" width="20" height="20"></a>
+                    <a href="https://www.facebook.com/%EA%B7%BC%ED%98%84%EB%8C%80%EC%82%AC%EB%AF%B8%EC%88%A0%EA%B4%80%EB%8B%B4%EB%8B%A4-332929684309604"><img src="images/facebook.png" alt="facebook" width="20" height="20"></a>
+                </p>
+            </div>
+            <div class="footer-bottom">
+                <p>ⓒ 2021.조이홍. All rights reserved.</p>
+            </div>
+        </footer>
 </body>
 </html>
