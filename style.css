@@ -12,51 +12,44 @@
   
   /*헤더 css*/
   .header {
-    justify-content: space-between;
+    width: auto;
+    height: auto;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     font-size: 20px;
-    margin: 15px 0px;
-    background-color: #ffffff;
+    border: 1px solid red;
   }
   
-  a {
-    color: #000000;
-  }
   
   .logo img {
     width: 150px;
     height: 50px;
-  }
-  
-  .logo a {
-    position: relative;
-    padding: 6px 12px;
     margin: 0 20px;
   }
   
   .topnav {
     display: flex;
     position: relative;
-    justify-content: space-around;
     align-items: center;
     margin: 0px 30px;
     list-style: none;
     padding-left: 0;
+    border: 1px solid red;
   }
   
   .topnav a {
     position: relative;
     padding: 6px 12px;
     margin: 30px;
+    color: black;
   }
   
   .topnav a::after {
     content: "";
     position: absolute;
     bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0%;
     width: 0;
     height: 2px;
     background: #000000;
@@ -68,7 +61,7 @@
   }
 
   
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 900px) {
     .header {
       flex-direction: column;
     }
@@ -78,29 +71,105 @@
   .content {
     margin: 0 0;
     height: 60%;
-    background-color: white;
+    border: 1px solid green;
     overflow: hidden;
     word-break: keep-all;
   }
   
-  .welcome {
-    position: relative;
-    font-size: 1.8vw;
-    width: 70%;
-    margin: 0 auto;
-    margin-bottom: 100px;
+  .sidetab {
+    width: 15%;
+    height: 150px;
+    border: 1px solid purple;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    float: left;
+    margin-left: 7vw;
+    margin-right: 1vw;
   }
 
+  .sidetab a {
+    color: grey;
+  }
 
+  .welcome {
+    font-size: 20px;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    border: 1px solid blue;
+    float: left;
+  }
+
+  /*인사말 css*/
+  #face {
+    text-align: center;
+    margin: 50px 30px;
+  }
+
+  #face img {
+    border: 1px solid black;
+  }
+
+  #hi {
+    margin-top: 30px;
+    border: 1px solid purple;
+  }
+
+  #hi tr, td {
+    background-color: #00000000;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+  }
+
+  @media screen and (min-width: 900px) {
+    #hi {
+      max-width: 1000px;
+      margin-left: 50px;
+    }
+
+    #hi p,#hi img {
+      margin-left: 50px;
+    }
+
+    .reservation {
+      margin-left: 50px;
+    }
+  }
+
+  /*오시는 길 css*/
+  #route a {
+    color: black;
+  }
   
+
+  /*예약하기 버튼*/
+  .reservation {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+    padding: 3px 10px 3px 10px;
+    display: inline-block;
+    border-radius: 10px;
+    transition: all 0.1s;
+    text-shadow: 1px 3px rgba(0, 0, 0, 0.534);
+  }
+
+  .reservation:active {
+    transform: translateY(3px);
+  }
+  
+
   /*인포 css*/
-  
+  #sep {
+    font-size: 23px;
+  }
 
   #time li {
     list-style-type: none;
   }
   #special {
-    font-size: 1.3vw;
+    font-size: 13px;
   }
   
   #fee table {
@@ -108,7 +177,7 @@
     width: auto;
   }
     
-  td, th {
+  #fee td, th {
     border: 1px solid black;
     text-align: left;
     padding: 8px;
@@ -124,87 +193,55 @@
   }
 
 /*푸터 css*/
-.footer {
-    bottom: 0;
-    left: 0;
-    right:0;
-    background: #111;
-    height: auto;
-    width: 100vw;
-    font-family: "Open Sans";
-    padding-top: 10px;
-    color: #fff;
+footer {
+  bottom: 0;
+  left: 0;
+  right:0;
+  background: #111;
+  height: auto;
+  width: auto;
+  font-family: "Open Sans";
+  padding-top: 10px;
+  color: #fff;
 }
 
 .footer-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }
 
 .footer-content h3 {
-    font-size: 1.5rem;
-    font-weight: 400;
-    text-transform: capitalize;
-    line-height: 3rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
 }
 
 .footer-content p {
-    max-width: 500px;
-    margin: 10px auto;
-    line-height: 28px;
-    font-size: 15px;
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 15px;
 }
 
 .footer-bottom {
-    background: #000;
-    width:100vw;
-    padding: 10px 0;
-    text-align: center;
+  background: #000;
+  width:auto;
+  padding: 10px 0;
+  text-align: center;
 }
 
 .footer-bottom p {
-    font-size: 10px;
-    word-spacing: 2px;
-    text-transform: capitalize;
+  font-size: 10px;
+  word-spacing: 2px;
+  text-transform: capitalize;
 }
 
 .footer-bottom span {
-    text-transform: uppercase;
-    opacity: .4;
-    font-weight: 200;
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight: 200;
 }
-
-
-  @media(max-width: 767px){
-    .footer-content{
-        width: 100%;
-        text-align: center;
-        
-    }
-  }
-      
-  @media(max-width: 574px){
-      .footer-content{
-        width: 100%;
-        text-align: center;
-      }
-  }
-
-  @media(max-width: 767px){
-      .footer-bottom{
-            width: 100%;
-            text-align: center;
-      }
-  }
-          
-  @media(max-width: 574px){
-      .footer-bottom{
-            width: 100%;
-            text-align: center;
-      }
-  }
-  
-
