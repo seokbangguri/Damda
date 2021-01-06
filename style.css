@@ -2,6 +2,7 @@
     text-decoration: none;
     margin: 0;
     padding: 0;
+    word-break: keep-all;
   }
   
   body {
@@ -27,42 +28,117 @@
     height: 50px;
     margin: 0 20px;
   }
-  
-  .topnav {
+  #top {
+    float: left;
+    margin: 25px 10px;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+#dropdown {
+    color: white;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.5s ease;
+    left: 0;
+    display: none;
+    text-align: left;
+    z-index:1;
+    top: 20px;
+}
+
+#dropdown a{
+    color: rgb(0, 0, 0);
+}
+
+#top:hover > ul,
+ul li ul:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    visibility: visible;
+    opacity:1;
+    display: block;
+}
+
+#item {
+    clear: both;
+    width: 210px;
+    color: rgb(0, 0, 0);
+    height: 30px;
+    padding-left: -100px;
+    position: relative; 
+    z-index:1;
+}
+
+section {
+    height: max-content;
+}
+
+.logo a {
+    color: rgb(0, 0, 0);
+    position: relative;
+    padding: 10px;
+    font-size: 30px;
+}
+
+.logo a:visited {
+    color: rgb(0, 0, 0);
+}
+
+nav {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    width: 100%;
+    height: max-content;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+ul {
     display: flex;
     position: relative;
+    justify-content: space-around;
     align-items: center;
-    margin: 0px 30px;
+    margin: 10px 20px;
     list-style: none;
     padding-left: 0;
-    border: 1px solid red;
-  }
-  
-  .topnav a {
+}
+
+ul a {
     position: relative;
     padding: 6px 12px;
     margin: 30px;
-    color: black;
-  }
-  
-  .topnav a::after {
+    color: rgb(0, 0, 0);
+}
+
+ul a:visited {
+    color: rgb(0, 0, 0);
+}
+
+ul a::after {
     content: "";
     position: absolute;
     bottom: 0;
-    left: 0%;
+    left: 50%;
+    transform: translateX(-50%);
     width: 0;
     height: 2px;
-    background: #000000;
+    background: rgb(0, 0, 0);
     transition: all .5s ease-out;
-  }
-  
-  .topnav a:hover::after {
-    width: 100%
-  }
+}
 
-  
+ul a:hover::after {
+    width: 100%
+}
   @media screen and (max-width: 900px) {
-    .header {
+    nav {
       flex-direction: column;
     }
   }
@@ -73,7 +149,6 @@
     height: 60%;
     border: 1px solid green;
     overflow: hidden;
-    word-break: keep-all;
   }
   
   .sidetab {
@@ -92,7 +167,7 @@
   }
 
   .welcome {
-    font-size: 20px;
+    font-size: 15px;
     width: 70%;
     margin: 0 auto;
     margin-bottom: 50px;
@@ -104,7 +179,7 @@
   /*인사말 css*/
   #face {
     text-align: center;
-    margin: 50px 30px;
+    margin: 0px 10px;
   }
 
   #face img {
