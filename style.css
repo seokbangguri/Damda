@@ -12,16 +12,6 @@
   }
   
   /*헤더 css*/
-  .header {
-    width: auto;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 20px;
-    border: 1px solid red;
-  }
-  
   
   .logo img {
     width: 150px;
