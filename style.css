@@ -155,13 +155,13 @@ ul #item::after {
 }
 
 ul .menu:hover::after {
-    width: 100%
+  width: 100%
 }
 ul #item:hover::after {
   width: 40%
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   .logo {
     text-align: center;
     height: 30px;
@@ -173,8 +173,7 @@ ul #item:hover::after {
   }
 
   #naaav a {
-    margin-left: 10px;
-    font-size: 10px;
+    font-size: 8px;
   }
   .sidetab {
     display: none;
@@ -246,16 +245,20 @@ ul #item:hover::after {
 
   /*슬라이드쇼 css*/
   
+  .slideshow-container {    
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 985px;
+    height: max-content;
+    position: relative;
+    margin: 0 auto;
+}
+@media screen and (max-width: 1000px) {
   .slideshow-container {
-    
-  -webkit-background-size: cover;
-	background-size: cover;
-	background-position: center center;
-	background-repeat: no-repeat;
-	
-  max-width: 1300px;
-  position: relative;
-  margin: auto;
+    width: 100%;
+  }
 }
 
 /* Hide the images by default */
@@ -395,7 +398,7 @@ ul #item:hover::after {
     #hi {
       width: 90%;
       margin: 0 auto;
-      font-size: auto;
+      font-size: 3px;
       margin-bottom: 50px;
       display: inline-block
     }
@@ -414,12 +417,20 @@ ul #item:hover::after {
       margin-left: 0px;
       margin: 0;
     }
+    #map {
+      width: 70%;
+      height: 200px;
+    }
   }
 
 
   /*오시는 길 css*/
   #route a {
     color: black;
+  }
+  #map {
+    width: 500px;
+    height: 400px;
   }
   
 
