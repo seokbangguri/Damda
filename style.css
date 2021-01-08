@@ -258,7 +258,7 @@ ul #item:hover::after {
 }
 @media screen and (max-width: 1000px) {
   .slideshow-container {
-    width: 100%;
+    width: 90%;
   }
 }
 
@@ -453,9 +453,6 @@ ul #item:hover::after {
   
 
   /*인포 css*/
-  #sep {
-    font-size: 23px;
-  }
 
   #time li {
     list-style-type: none;
