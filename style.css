@@ -174,7 +174,10 @@ ul #item:hover::after {
 
   #naaav a {
     margin-left: 10px;
-    font-size: 13px;
+    font-size: 10px;
+  }
+  .sidetab {
+    display: none;
   }
 }
   
@@ -224,6 +227,21 @@ ul #item:hover::after {
     box-shadow: 5px 5px rgb(200, 200, 200);
     display: flex;
     border-radius: 20px 20px 20px 20px;
+  }
+  @media screen and (max-width: 900px) {
+    .content {
+      width: 100%;
+      max-width: 100%;
+      min-width: 0;
+    }
+    .welcome {
+      max-width: 90%;
+      min-width: 0px;
+      margin: 0 auto;
+      width: 100%;
+      background-color: rgb(0,0,0,0);
+      box-shadow: none;
+    }
   }
 
   /*슬라이드쇼 css*/
@@ -373,6 +391,30 @@ ul #item:hover::after {
     text-decoration: none;
     letter-spacing: 0.5px;
   }
+  @media screen and (max-width: 900px) {
+    #hi {
+      width: 90%;
+      margin: 0 auto;
+      font-size: auto;
+      margin-bottom: 50px;
+      display: inline-block
+    }
+    #intro td,#intro p {
+      margin-right: 0;
+    }
+    #hi img {
+      margin-left: 5px;
+      width: 95%;
+      height: 400px;
+    }
+    #face img {
+      border: 1px solid black;
+      width: 70px;
+      height: 100px;
+      margin-left: 0px;
+      margin: 0;
+    }
+  }
 
 
   /*오시는 길 css*/
@@ -443,7 +485,6 @@ footer {
   padding-top: 10px;
   color: #fff;
   position: relative;
-  min-width: 1300px;
 }
 
 
