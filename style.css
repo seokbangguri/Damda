@@ -173,7 +173,8 @@ ul #item:hover::after {
   }
 
   #naaav a {
-    font-size: 8px;
+    margin-left: 10px;
+    font-size: 10px;
   }
   .sidetab {
     display: none;
@@ -398,7 +399,7 @@ ul #item:hover::after {
     #hi {
       width: 90%;
       margin: 0 auto;
-      font-size: 3px;
+      font-size: 8px;
       margin-bottom: 50px;
       display: inline-block
     }
