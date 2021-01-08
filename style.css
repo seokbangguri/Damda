@@ -6,9 +6,12 @@
   }
   
   body {
-    background-color: #ffffff;
+    background-color: rgb(250, 250, 250);
     font-family: 'Noto Sans KR';
-    color: #000000
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    height: 100%;
   }
   
   /*헤더 css*/
@@ -47,7 +50,7 @@
 
 #top:hover > ul,
 ul li ul:hover {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.7);
     visibility: visible;
     opacity:1;
     display: block;
@@ -61,6 +64,7 @@ ul li ul:hover {
     padding-left: -100px;
     position: relative; 
     z-index:1;
+    font-size: 13px;
 }
 
 section {
@@ -75,7 +79,19 @@ section {
 }
 
 .logo a:visited {
-    color: rgb(0, 0, 0);
+    color: #000000;
+}
+
+#naaav {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  min-width: 1300px;
+  border-radius: 0px 0px 20px 20px;
 }
 
 nav {
@@ -85,6 +101,8 @@ nav {
     text-decoration: none;
     width: 100%;
     height: max-content;
+    background-color: rgb(0, 0, 0, 0);
+    margin: 0;
 }
 
 nav a {
@@ -112,7 +130,7 @@ ul a:visited {
     color: rgb(0, 0, 0);
 }
 
-ul a::after {
+ul .menu::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -124,51 +142,92 @@ ul a::after {
     transition: all .5s ease-out;
 }
 
-ul a:hover::after {
+ul #item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  transform: translateX(0%);
+  width: 0;
+  height: 2px;
+  background: rgb(0, 0, 0);
+  transition: all .5s ease-out;
+}
+
+ul .menu:hover::after {
     width: 100%
 }
-  @media screen and (max-width: 900px) {
-    nav {
-      flex-direction: column;
-    }
+ul #item:hover::after {
+  width: 40%
+}
+
+@media screen and (max-width: 900px) {
+  .logo {
+    text-align: center;
+    height: 30px;
   }
+  #naaav {
+    display: block;
+    flex-direction: row;
+    min-width: 100px;
+  }
+
+  #naaav a {
+    margin-left: 10px;
+    font-size: 13px;
+  }
+}
   
   /*컨텐츠 css*/
   .content {
-    margin: 0 0;
-    height: 60%;
-    border: 1px solid green;
-    overflow: hidden;
+    margin: 0 auto;
+    min-height: 76.4vh;
+    width: 100%;
+    min-width: 1300px;
   }
-  
+
+  h2,#hi h3 {
+    margin-top: 15px;
+    margin-left: 30px;
+    margin-bottom: 15px;
+  }
+
   .sidetab {
-    width: 15%;
+    width: 150px;
     height: 150px;
-    border: 1px solid purple;
+    min-width: 150px;
     margin-top: 50px;
-    margin-bottom: 50px;
-    float: left;
-    margin-left: 7vw;
-    margin-right: 1vw;
+    margin-left: 50px;
+    margin-right: 15px;
+    background-color: rgb(215, 215, 215);
+    box-shadow: 3px 3px rgb(190, 190, 190);
+    border: 1px solid  rgb(192, 192, 192);
+    border-radius: 0px 20px 0px 20px;
   }
 
   .sidetab a {
-    color: grey;
+    color: rgb(70, 70, 70);
+    margin-left: 20px;
+  }
+  .sidetab h3 {
+    margin-left: 10px;
   }
 
   .welcome {
-    font-size: 15px;
-    width: 70%;
+    font-size: 16px;
+    width: 1200px;
+    min-width: 900px;
     margin: 0 auto;
     margin-bottom: 50px;
     margin-top: 50px;
-    border: 1px solid blue;
-    float: left;
+    background-color: rgb(235, 235, 235);
+    box-shadow: 5px 5px rgb(200, 200, 200);
+    display: flex;
+    border-radius: 20px 20px 20px 20px;
   }
+
   /*슬라이드쇼 css*/
-  .wrap {
-    width: 100%;
-  }
+  
   .slideshow-container {
     
   -webkit-background-size: cover;
@@ -176,12 +235,9 @@ ul a:hover::after {
 	background-position: center center;
 	background-repeat: no-repeat;
 	
-  max-width: 100%;
+  max-width: 1300px;
   position: relative;
   margin: auto;
-
-  
-  
 }
 
 /* Hide the images by default */
@@ -199,7 +255,7 @@ ul a:hover::after {
   padding: 16px;
   color: white;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 50px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
@@ -278,41 +334,46 @@ ul a:hover::after {
   }
   }
 
+
   /*인사말 css*/
   #face {
     text-align: center;
     margin: 0px 10px;
+    margin-left: 30px;
+  }
+  #hi img {
+    margin-left: 100px;
   }
 
   #face img {
     border: 1px solid black;
+    margin-top: 0;
+    width: 150px;
+    height: 200px;
+    margin-left: 0px;
   }
 
   #hi {
     margin-top: 30px;
-    border: 1px solid purple;
+    background-color: rgb(215, 215, 215);
+    box-shadow: 3px 3px rgb(190, 190, 190);
+    width: 900px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    border: 1px solid  rgb(192, 192, 192);
+    border-radius: 20px 20px 20px 20px;
   }
 
-  #hi tr, td {
+  #hi p {
+    margin-right: 50px;
+    margin-left: 20px;
+  }
+  #intro tr, td {
     background-color: #00000000;
     text-decoration: none;
     letter-spacing: 0.5px;
   }
 
-  @media screen and (min-width: 900px) {
-    #hi {
-      max-width: 1000px;
-      margin-left: 50px;
-    }
-
-    #hi p,#hi img {
-      margin-left: 50px;
-    }
-
-    .reservation {
-      margin-left: 50px;
-    }
-  }
 
   /*오시는 길 css*/
   #route a {
@@ -352,6 +413,7 @@ ul a:hover::after {
   #fee table {
     border-collapse: collapse;
     width: auto;
+    margin-left: 15px;
   }
     
   #fee td, th {
@@ -370,17 +432,20 @@ ul a:hover::after {
   }
 
 /*푸터 css*/
+
 footer {
   bottom: 0;
   left: 0;
   right:0;
   background: #111;
   height: auto;
-  width: auto;
-  font-family: "Open Sans";
+  width: 100%;
   padding-top: 10px;
   color: #fff;
+  position: relative;
+  min-width: 1300px;
 }
+
 
 .footer-content {
   display: flex;
@@ -406,7 +471,7 @@ footer {
 
 .footer-bottom {
   background: #000;
-  width:auto;
+  width:100%;
   padding: 10px 0;
   text-align: center;
 }
@@ -417,8 +482,3 @@ footer {
   text-transform: capitalize;
 }
 
-.footer-bottom span {
-  text-transform: uppercase;
-  opacity: .4;
-  font-weight: 200;
-}
