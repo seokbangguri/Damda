@@ -179,6 +179,15 @@ ul #item:hover::after {
   .sidetab {
     display: none;
   }
+  #item {
+    clear: both;
+    width: 150px;
+    color: rgb(0, 0, 0);
+    height: 30px;
+    padding-left: -100px;
+    position: relative; 
+    z-index:1;
+}
 }
   
   /*컨텐츠 css*/
@@ -228,7 +237,7 @@ ul #item:hover::after {
     display: flex;
     border-radius: 20px 20px 20px 20px;
   }
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1000px) {
     .content {
       width: 100%;
       max-width: 100%;
@@ -251,7 +260,7 @@ ul #item:hover::after {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    width: 985px;
+    width: 1047px;
     height: max-content;
     position: relative;
     margin: 0 auto;
@@ -395,7 +404,7 @@ ul #item:hover::after {
     text-decoration: none;
     letter-spacing: 0.5px;
   }
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1000px) {
     #hi {
       width: 90%;
       margin: 0 auto;
@@ -430,8 +439,15 @@ ul #item:hover::after {
     color: black;
   }
   #map {
-    width: 500px;
-    height: 400px;
+    width: 70%;
+    height: 250px;
+  }
+
+  @media (max-width: 1000px) {
+    #map {
+      width: 500px;
+      height: 400px;
+    }
   }
   
 
