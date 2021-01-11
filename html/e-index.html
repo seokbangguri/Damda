@@ -1,48 +1,88 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>근현대사 미술관 담다</title>
     <link href="../style.css" rel="stylesheet" type="text/css">
     <meta name="description" content="근현대사 미술관 담다">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <script src="../prac1.js" defer></script>
 </head>
 <body>
     <!--헤더-->
     <nav>
+        <div id="naaav">
         <div class="logo">
-            <a href="./e-index.html">
-                <img src="../images/logo.png"></img>
+            <a href="../index.html">
+                <img src="../images/eng_logo.png"></img>
             </a>
         </div>
-        <ul class="topnav">
-            <li id="top"><a class="menu" href="./e-introduce.html">About DamDa</a>
-                <ul id="dropdown">
-                    <li id= "item"><a href="./e-introduce.html">Greetings</a></li>
-                    <li id= "item"><a href="./e-organization.html">Organization</a></li>
-                    <li id= "item"><a href="./e-purpose.html">History</a></li>
-                </ul>
-            </li>
-            <li id="top"><a class="menu" href="./e-info.html">Information</a>
-                <ul id="dropdown">
-                    <li id= "item"><a href="./e-info.html">Information</a></li>
-                    <li id= "item"><a href="./e-route.html">Location</a></li>
-                </ul></li>
-            <li id="top"><a class="menu" href="./e-culture.html">Service</a>
-                <ul id="dropdown">
-                    <li id= "item"><a href="./e-culture.html">Program</a></li>
-                    <li id= "item"><a href="./e-service.html">Rent a spot</a></li>
-                </ul></li>
-            <li id="top"><a class="menu" href="../index.html">Korean</a></li>
-        </ul>
+            <ul>
+                <li id="top"><a class="menu" href="../html/e-introduce.html">About DamDa</a>
+                    <ul id="dropdown">
+                        <li id= "item"><a href="../html/e-introduce.html">Greeting</a></li>
+                        <li id= "item"><a href="../html/e-organization.html">Organization</a></li>
+                        <li id= "item"><a href="../html/e-purpose.html">History</a></li>
+                    </ul>
+                </li>
+                <li id="top"><a class="menu" href="../html/e-info.html">Information</a>
+                    <ul id="dropdown">
+                        <li id= "item"><a href="../html/e-info.html">Information</a></li>
+                        <li id= "item"><a href="../html/e-route.html">Location</a></li>
+                    </ul></li>
+                <li id="top"><a class="menu" href="../html/e-culture.html">Service</a>
+                    <ul id="dropdown">
+                        <li id= "item"><a href="../html/e-culture.html">Program</a></li>
+                        <li id= "item"><a href="../html/e-service.html">Rent a spot</a></li>
+                    </ul></li>
+                <li id="top"><a class="menu" href="../index.html">Korean</a></li>
+            </ul>
+        </div>
     </nav>
     <!--메인 컨텐츠-->
+    <div class="content">
+    <div class= "wrap">
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+             <!---------- <div class="numbertext">1 / 3</div> --------------->
+              <img src="../images/slide01.jpg" style="width:100%">
+              <!-- <div class="text">담다</div> -->
+            </div>
+            
+            <div class="mySlides fade">
+             <!---------- <div class="numbertext">2 / 3</div>----------------->
+              <img src="../images/slide02.jpg" style="width:100%">
+              <!-- <div class="text">담다에 오신 것을 환영합니다</div> -->
+            </div>
+            
+            <div class="mySlides fade">
+              <!----------<div class="numbertext">3 / 3</div>----------->
+              <img src="../images/slide03.jpg" style="width:100%">
+              <!-- <div class="text">담다에 오신 것을 환영합니다</div> -->
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+            <!---
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+        --->
+        </div>
+    </div>
+
     <!--푸터-->
     <footer>
         <div class="footer-content">
             <p>
-                근현대사 미술관 담다
+                DAMDA
                 <a href="https://band.us/n/a6a94f63g8Xa3"><img src="../images/band.png" alt="band" width="20" height="20"></a>
                 <a href="https://www.facebook.com/%EA%B7%BC%ED%98%84%EB%8C%80%EC%82%AC%EB%AF%B8%EC%88%A0%EA%B4%80%EB%8B%B4%EB%8B%A4-332929684309604"><img src="../images/facebook.png" alt="facebook" width="20" height="20"></a>
             </p>
