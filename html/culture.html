@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <script src="../prac1.js" defer></script>
 </head>
 <body>
         <!--헤더-->
@@ -39,6 +40,29 @@
             <li id="top"><a class="menu" href="../html/e-index.html">English</a></li>
         </ul>
     </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="../html/introduce.html" id="mea">담다</a>
+        <a href="../html/introduce.html" id="minmenu">인사말</a>
+        <a href="../html/purpose.html" id="minmenu">연혁</a>
+        <a href="../html/organization.html" id="minmenu">조직도</a>
+        <a href="../html/info.html">이용안내</a>
+        <a href="../html/info.html" id="minmenu">관람안내</a>
+        <a href="../html/route.html" id="minmenu">오시는 길</a>
+        <a href="../html/culture.html">서비스</a>
+        <a href="../html/culture.html" id="minmenu">프로그램</a>
+        <a href="../html/service.html" id="minmenu">갤러리 대관</a>
+        <a href="../html/e-index.html">English</a>
+    </div>
+      
+      <!-- Use any element to open the sidenav -->
+    <span onclick="openNav()">
+        <div class="hamburger" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </span>
     </nav>
         <!--메인 컨텐츠-->
         <div class="content">
