@@ -220,6 +220,7 @@ ul #item:hover::after {
   .sidetab a {
     color: rgb(70, 70, 70);
     margin-left: 20px;
+    padding: 5px
   }
   .sidetab h3 {
     margin-left: 10px;
@@ -439,14 +440,17 @@ ul #item:hover::after {
     color: black;
   }
   #map {
-    width: 70%;
-    height: 250px;
+    width: 500px;
+    height: 400px;
+    margin-left: 5%;
+    border: 1px solid black;
   }
 
   @media (max-width: 1000px) {
     #map {
-      width: 500px;
-      height: 400px;
+      width: 70%;
+      height: 250px;
+      margin-left: 10%;
     }
   }
   
@@ -456,11 +460,21 @@ ul #item:hover::after {
     text-decoration: none;
     font-size: 1.5rem;
     color: black;
-    padding: 3px 10px 3px 10px;
+    padding: 3px 100px 3px 100px;
     display: inline-block;
     border-radius: 10px;
     transition: all 0.1s;
-    text-shadow: 1px 3px rgba(0, 0, 0, 0.534);
+    border: 1px solid black;
+    box-shadow: 2px 2px rgb(61, 61, 61);
+    margin-left: 30%;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 1000px) {
+    .reservation {
+      font-size: 1rem;
+      margin-left: 15%;
+    }
   }
 
   .reservation:active {
