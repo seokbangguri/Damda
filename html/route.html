@@ -22,9 +22,11 @@
         <ul>
             <li id="top"><a class="menu" href="../html/introduce.html">미술관 소개</a>
                 <ul id="dropdown">
-                    <li id= "item"><a href="../html/introduce.html">관장/이사장 인사말</a></li>
+                    <li id= "item"><a href="../html/introduce.html">이사장 인사말</a></li>
+                    <li id= "item"><a href="../html/introduce2.html">관장 인사말</a></li>
                     <li id= "item"><a href="../html/organization.html">조직도</a></li>
-                    <li id= "item"><a href="../html/purpose.html">연혁/설립목적</a></li>
+                    <li id= "item"><a href="../html/purpose.html">연혁</a></li>
+                    <li id= "item"><a href="../html/purpose2.html">설립목적</a></li>
                 </ul>
             </li>
             <li id="top"><a class="menu" href="../html/info.html">이용안내</a>
@@ -42,17 +44,19 @@
     </div>
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="../html/introduce.html" id="mea">담다</a>
-        <a href="../html/introduce.html" id="minmenu">인사말</a>
-        <a href="../html/purpose.html" id="minmenu">연혁</a>
-        <a href="../html/organization.html" id="minmenu">조직도</a>
-        <a href="../html/info.html">이용안내</a>
-        <a href="../html/info.html" id="minmenu">관람안내</a>
-        <a href="../html/route.html" id="minmenu">오시는 길</a>
-        <a href="../html/culture.html">서비스</a>
-        <a href="../html/culture.html" id="minmenu">프로그램</a>
-        <a href="../html/service.html" id="minmenu">갤러리 대관</a>
-        <a href="../html/e-index.html">English</a>
+            <a href="../html/introduce.html" id="mea">담다</a>
+            <a href="../html/introduce.html" id="minmenu">이사장 인사말</a>
+            <a href="../html/introduce2.html" id="minmenu">관장 인사말</a>
+            <a href="../html/purpose.html" id="minmenu">연혁</a>
+            <a href="../html/purpose2.html" id="minmenu">설립목적</a>
+            <a href="../html/organization.html" id="minmenu">조직도</a>
+            <a href="../html/info.html">이용안내</a>
+            <a href="../html/info.html" id="minmenu">관람안내</a>
+            <a href="../html/route.html" id="minmenu">오시는 길</a>
+            <a href="../html/culture.html">서비스</a>
+            <a href="../html/culture.html" id="minmenu">프로그램</a>
+            <a href="../html/service.html" id="minmenu">갤러리 대관</a>
+            <a href="../html/e-index.html">English</a>
     </div>
       
       <!-- Use any element to open the sidenav -->
@@ -87,7 +91,7 @@
                             var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
                                 mapOption = { 
                                     center: new kakao.maps.LatLng(37.2771813724545, 127.13667245593169), // 지도의 중심좌표
-                                    level: 3 // 지도의 확대 레벨
+                                    level: 2 // 지도의 확대 레벨
                                 };
 
                             var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다

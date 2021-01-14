@@ -58,7 +58,7 @@ ul li ul:hover {
 
 #item {
   clear: both;
-  width: 210px;
+  width: 235px;
   color: rgb(0, 0, 0);
   height: 30px;
   padding-left: -100px;
@@ -88,9 +88,9 @@ display: flex;
 align-items: center;
 text-decoration: none;
 width: 100%;
-max-width: 1500px;
+/* max-width: 1500px; */
 margin: 0 auto;
-min-width: 1300px;
+/* min-width: 1300px; */
 border-radius: 0px 0px 20px 20px;
 }
 
@@ -161,7 +161,7 @@ ul #item:hover::after {
 width: 40%
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 767px) {
 .logo {
     margin-top: 15px;
 }
@@ -182,8 +182,110 @@ width: 40%
 .content {
   margin: 0 auto;
   min-height: 76.4vh;
+  width: 85%;
+  /*min-width: 1300px;*/
+}
+
+.boddy {
+  margin: 0;
+  padding: 0;
   width: 100%;
-  min-width: 1300px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container2 {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.container2 .box {
+  position: relative;
+  width:350px;
+  padding:40px;
+  background: #fff;
+  box-shadow: 0 5px 15px rgba(0,0,0,.1);
+  border-radius:4px;
+  margin: 10px auto;
+  box-sizing: border-box;
+  overflow:hidden;
+  text-align:center;
+  box-shadow: 2px 2px 2px 2px rgb(70, 70, 70);
+}
+
+.container2 .box .icon {
+  position: relative;
+  width:80px;
+  height:80px;
+  color: #fff;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  margin: 0 auto;
+  border-radius: 50%;
+  font-size:40px;
+  font-weight:700;
+  transition:1s;
+}
+
+.container2 .box:nth-child(1) .icon {
+  box-shadow: 0 0 0 0 #e91e63;
+  background: #e91e63;
+}
+
+.container2 .box:nth-child(1):hover .icon {
+box-shadow: 0 0 0 400px #e91e63;
+background: #e91e63;
+}
+
+.container2 .box:nth-child(2) .icon {
+box-shadow: 0 0 0 0 #23e629;
+background: #23e629;
+}
+
+.container2 .box:nth-child(2):hover .icon {
+box-shadow: 0 0 0 400px #23e629;
+background: #23e629;
+}
+
+.container2 .box:nth-child(3) .icon {
+box-shadow: 0 0 0 0 #2196f3;
+background: #2196f3;
+}
+
+.container2 .box:nth-child(3):hover .icon {
+box-shadow: 0 0 0 400px #2196f3;
+background: #2196f3;
+}
+
+.container2 .box .content_1 {
+position:relative;
+z-index:1;
+transition: 0.5s;
+}
+
+.content_1 h3 {
+  color: #000;
+}
+
+.container2 .box:hover .content_1 h3 {
+  transition: 1s;
+  color:#fff;
+}
+
+.container2 .box .content_1 h3{
+font-size: 20px;
+margin: 10px 0;
+padding: 0;
+}
+
+.container2 .box .content_1 p {
+margin: 0;
+padding:0;
 }
 
 h2,#hi h3 {
@@ -193,7 +295,7 @@ h2,#hi h3 {
 }
 
 .sidetab {
-  width: 150px;
+  width: 210px;
   height: 150px;
   min-width: 150px;
   margin-top: 50px;
@@ -203,6 +305,12 @@ h2,#hi h3 {
   box-shadow: 3px 3px rgb(190, 190, 190);
   border: 1px solid  rgb(192, 192, 192);
   border-radius: 0px 20px 0px 20px;
+}
+
+#introside {
+  width: 200px;
+  min-width: 200px;
+  height: 260px;
 }
 
 .sidetab a {
@@ -216,28 +324,30 @@ h2,#hi h3 {
 
 .welcome {
   font-size: 16px;
-  width: 1200px;
-  min-width: 900px;
+ /* width: 1200px;
+  min-width: 900px;*/
+  width:100%;
   margin: 0 auto;
   margin-bottom: 50px;
   margin-top: 50px;
   background-color: rgb(235, 235, 235);
   box-shadow: 5px 5px rgb(200, 200, 200);
   display: flex;
+  border: 1px solid rgb(200, 200, 200);
   border-radius: 20px 20px 20px 20px;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 767px) {
   .content {
     width: 100%;
     max-width: 100%;
     min-width: 0;
   }
   .welcome {
-    max-width: 90%;
-    min-width: 0px;
+    /* max-width: 90%; */
+    /* min-width: 0px; */
     margin: 0 auto;
     width: 100%;
-    background-color: rgb(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
     box-shadow: none;
   }
 }
@@ -245,20 +355,11 @@ h2,#hi h3 {
 /*슬라이드쇼 css*/
 
 .slideshow-container {    
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  width: 1047px;
-  height: max-content;
+  width: 100%;
   position: relative;
-  margin: 0 auto;
-}
-@media screen and (max-width: 1000px) {
-.slideshow-container {
-  width: 87%;
-}
-}
+  margin: auto;
+  max-width: 1000px;
+  }
 
 /* Hide the images by default */
 .mySlides {
@@ -280,6 +381,14 @@ transition: 0.6s ease;
 border-radius: 0 3px 3px 0;
 user-select: none;
 }
+@media screen and (max-width: 767px) {
+  .slideshow-container {
+    width: 90%;
+  }
+  .prev, .next {
+    font-size: 20px;
+  }
+  }
 
 /* Position the "next button" to the right */
 .next {
@@ -355,7 +464,7 @@ to {opacity: 1}
   margin-left: 30px;
 }
 #hi img {
-  margin-left: 100px;
+  margin-left: 30px;
 }
 
 #face img {
@@ -373,6 +482,7 @@ to {opacity: 1}
   width: 900px;
   margin-bottom: 50px;
   margin-top: 50px;
+  margin-right: 30px;
   border: 1px solid  rgb(192, 192, 192);
   border-radius: 20px 20px 20px 20px;
 }
@@ -386,7 +496,7 @@ to {opacity: 1}
   text-decoration: none;
   letter-spacing: 0.5px;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 767px) {
   #hi {
     width: 90%;
     margin: 0 auto;
@@ -400,7 +510,7 @@ to {opacity: 1}
   #hi img {
     margin-left: 5px;
     width: 95%;
-    height: 400px;
+    height: 80%;
   }
   #face img {
     border: 1px solid black;
@@ -421,13 +531,14 @@ to {opacity: 1}
   color: black;
 }
 #map {
-  width: 500px;
-  height: 400px;
+  width: 90%;
+  height: 300px;
+  max-width: 450px;
   margin-left: 5%;
-  border: 1px solid black;
+  box-shadow: 2px 2px 2px 2px rgb(70, 70, 70);
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 767px) {
   #map {
     width: 70%;
     height: 250px;
@@ -451,7 +562,7 @@ to {opacity: 1}
   margin-bottom: 20px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 767px) {
   .reservation {
     font-size: 0.7rem;
     margin-left: 10%;
@@ -548,13 +659,12 @@ text-transform: capitalize;
 
 
 
-
-/* The side navigation menu */
+/*사이드 네브 css*/
 .sidenav {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 100;
+  z-index: 1;
   top: 0;
   right: 0;
   background-color: #111;
@@ -604,7 +714,7 @@ text-transform: capitalize;
 
 
 
-
+/*햄버거 css*/
 .hamburger {
   display: inline-block;
   cursor: pointer;
@@ -619,24 +729,21 @@ text-transform: capitalize;
   transition: 0.4s;
 }
 
-/* Rotate first bar */
 .change .bar1 {
   -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
   transform: rotate(-45deg) translate(-9px, 6px) ;
 }
 
-/* Fade out the second bar */
 .change .bar2 {
   opacity: 0;
 }
 
-/* Rotate last bar */
 .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
   transform: rotate(45deg) translate(-8px, -8px) ;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 767px) {
     .hamburger {
       display: none;
     }

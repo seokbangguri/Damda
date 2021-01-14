@@ -19,26 +19,28 @@
                 <img src="../images/eng_logo.png"></img>
             </a>
         </div>
-            <ul>
-                <li id="top"><a class="menu" href="../html/e-introduce.html">About DamDa</a>
-                    <ul id="dropdown">
-                        <li id= "item"><a href="../html/e-introduce.html">Greeting</a></li>
-                        <li id= "item"><a href="../html/e-organization.html">Organization</a></li>
-                        <li id= "item"><a href="../html/e-purpose.html">History</a></li>
-                    </ul>
-                </li>
-                <li id="top"><a class="menu" href="../html/e-info.html">Information</a>
-                    <ul id="dropdown">
-                        <li id= "item"><a href="../html/e-info.html">Information</a></li>
-                        <li id= "item"><a href="../html/e-route.html">Location</a></li>
-                    </ul></li>
-                <li id="top"><a class="menu" href="../html/e-culture.html">Service</a>
-                    <ul id="dropdown">
-                        <li id= "item"><a href="../html/e-culture.html">Program</a></li>
-                        <li id= "item"><a href="../html/e-service.html">Rent a spot</a></li>
-                    </ul></li>
-                <li id="top"><a class="menu" href="../index.html">Korean</a></li>
-            </ul>
+        <ul>
+            <li id="top"><a class="menu" href="../html/e-introduce.html">About DamDa</a>
+                <ul id="dropdown">
+                    <li id= "item"><a href="../html/e-introduce.html">Greeting from Chairman</a></li>
+                    <li id= "item"><a href="../html/e-introduce2.html">Greeting from Director</a></li>
+                    <li id= "item"><a href="../html/e-organization.html">Organization</a></li>
+                    <li id= "item"><a href="../html/e-purpose.html">History</a></li>
+                    <li id= "item"><a href="../html/e-purpose2.html">Establishment</a></li>
+                </ul>
+            </li>
+            <li id="top"><a class="menu" href="../html/e-info.html">Information</a>
+                <ul id="dropdown">
+                    <li id= "item"><a href="../html/e-info.html">Information</a></li>
+                    <li id= "item"><a href="../html/e-route.html">Location</a></li>
+                </ul></li>
+            <li id="top"><a class="menu" href="../html/e-culture.html">Service</a>
+                <ul id="dropdown">
+                    <li id= "item"><a href="../html/e-culture.html">Program</a></li>
+                    <li id= "item"><a href="../html/e-service.html">Rent a spot</a></li>
+                </ul></li>
+            <li id="top"><a class="menu" href="../index.html">Korean</a></li>
+        </ul>
         </div>
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -84,24 +86,13 @@
                         <div id="map"></div>
 	                    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=5439f7a95d859b3acf32dbd68787c55d"></script>
 	                    <script>
-                            var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
-                                mapOption = { 
-                                    center: new kakao.maps.LatLng(37.2771813724545, 127.13667245593169), // 지도의 중심좌표
-                                    level: 3 // 지도의 확대 레벨
-                                };
+		                    var container = document.getElementById('map');
+		                    var options = {
+			                    center: new kakao.maps.LatLng(37.2771813724545, 127.13667245593169),
+			                    level: 2
+		                    };
 
-                            var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
-
-                            // 마커가 표시될 위치입니다 
-                            var markerPosition  = new kakao.maps.LatLng(37.2771813724545, 127.13667245593169); 
-
-                            // 마커를 생성합니다
-                            var marker = new kakao.maps.Marker({
-                                position: markerPosition
-                            });
-
-                            // 마커가 지도 위에 표시되도록 설정합니다
-                            marker.setMap(map);
+		                    var map = new kakao.maps.Map(container, options);
                         </script>
                         <p><br>
                             Tel : 031-283-7222 / 010-4349-7111<br>
