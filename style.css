@@ -13,7 +13,17 @@ body {
   color: #000000;
   height: 100%;
 }
+#mabo {
+  width: 100%;
+  height: 100%;
+}
 
+#mainname {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 20%;
+  margin-bottom: 20px;
+}
 /*헤더 css*/
 
 .logo img {
@@ -76,6 +86,13 @@ section {
   position: relative;
   padding: 10px;
   font-size: 30px;
+  margin-left: 30px;
+}
+@media screen and (max-width: 770px) {
+  .logo a {
+    font-size: 20px;
+    margin-left: 10px;
+  }
 }
 
 .logo a:visited {
@@ -161,7 +178,7 @@ ul #item:hover::after {
 width: 40%
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 770px) {
 .logo {
     margin-top: 15px;
 }
@@ -181,7 +198,6 @@ width: 40%
 /*컨텐츠 css*/
 .content {
   margin: 0 auto;
-  min-height: 76.4vh;
   width: 85%;
   /*min-width: 1300px;*/
 }
@@ -204,7 +220,7 @@ width: 40%
   justify-content: center;
   align-items: center;
   min-height:30vh;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Noto Sans KR';
  
 }
 
@@ -293,10 +309,9 @@ margin: 10px 0;
 padding: 0;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 770px) {
 
 .boddy {
-  margin-top: -30%;
   display:flex;
   justify-content: center;
   align-items: center;
@@ -375,6 +390,9 @@ h2,#hi h3 {
   margin-left: 20px;
   padding: 5px
 }
+.sidetab a:hover {
+  color: black
+}
 .sidetab h3 {
   margin-left: 10px;
 }
@@ -393,7 +411,7 @@ h2,#hi h3 {
   border: 1px solid rgb(200, 200, 200);
   border-radius: 20px 20px 20px 20px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 770px) {
   .content {
     width: 100%;
     max-width: 100%;
@@ -406,13 +424,16 @@ h2,#hi h3 {
     width: 95%;
     background-color: rgba(0, 0, 0, 0);
     box-shadow: none;
+    margin-bottom: 50px;
+    border: none;
   }
 }
 
 /*슬라이드쇼 css*/
 
 .slideshow-container {    
-  width: 100%;
+  width: 80%;
+  height: 30%;
   position: relative;
   margin: auto;
   max-width: 1000px;
@@ -433,14 +454,15 @@ margin-top: -22px;
 padding: 16px;
 color: white;
 font-weight: bold;
-font-size: 50px;
+font-size: 40px;
 transition: 0.6s ease;
 border-radius: 0 3px 3px 0;
 user-select: none;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 770px) {
   .slideshow-container {
     width: 90%;
+    max-width: 500px;
   }
   .prev, .next {
     font-size: 20px;
@@ -524,11 +546,10 @@ to {opacity: 1}
 }
 
 #face img {
-  border: 1px solid black;
   margin-top: 0;
   width: 150px;
   height: 200px;
-  margin-left: 0px;
+  margin: 0 auto;
 }
 
 #hi {
@@ -556,14 +577,17 @@ to {opacity: 1}
   width: 80%;
   margin: 0 auto;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 770px) {
   #hi {
     width: 90%;
     margin: 0 auto;
     font-size: 8px;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
     display: inline-block;
     margin-top: 30px;
+    background-color: rgb(0, 0, 0, 0);
+    border: none;
+    box-shadow: none;
   }
   #intro td,#intro p {
     margin-right: 0;
@@ -574,7 +598,6 @@ to {opacity: 1}
     height: 80%;
   }
   #face img {
-    border: 1px solid black;
     width: 50%;
     height: 60%;
     margin-left: 0px;
@@ -601,7 +624,7 @@ to {opacity: 1}
   z-index: 1;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 770px) {
   #map {
     width: 70%;
     height: 250px;
@@ -625,7 +648,7 @@ to {opacity: 1}
   margin-bottom: 20px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 770px) {
   .reservation {
     font-size: 0.7rem;
     margin-left: 10%;
@@ -670,15 +693,15 @@ tr:nth-child(even) {
 /*푸터 css*/
 
 footer {
-bottom: 0;
-left: 0;
-right:0;
-background: #111;
-height: auto;
-width: 100%;
-padding-top: 10px;
-color: #fff;
-position: relative;
+  bottom: 0;
+  left: 0;
+  right:0;
+  background: #111;
+  height: auto;
+  width: 100%;
+  padding-top: 10px;
+  color: #fff;
+  position: relative;
 }
 
 
@@ -806,7 +829,7 @@ text-transform: capitalize;
   transform: rotate(45deg) translate(-8px, -8px) ;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 770px) {
     .hamburger {
       display: none;
     }
